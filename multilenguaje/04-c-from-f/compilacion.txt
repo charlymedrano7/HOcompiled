@@ -1,0 +1,4 @@
+1) gfortran -c f-main.f90			       #Genero el objeto f-main.o 
+2) gcc -c c-sum.c                                      #Genero el objeto c-sum.o que tiene la funcion que llama fortran
+3) gcc c-sum.o f-main.o -o f-main.e -lgfortran         #Linkeo ambos objetos y creo el ejecutable f-main.e
+						       #tengo que utilizar la librería gfortran para hacer el link
